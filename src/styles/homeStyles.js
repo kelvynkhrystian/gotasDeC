@@ -26,6 +26,7 @@ export const HomeStyles = styled.main`
   button {
     border-radius: 10px;
     background-color: transparent;
+    display: none;
     height: 50px;
     width: 100%;
   }
