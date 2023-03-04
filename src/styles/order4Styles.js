@@ -7,8 +7,8 @@ export const Order4Styles = styled.main`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 50%;
+  justify-content: space-evenly;
+  height: 80%;
   width: 90%;
   padding: 10px;
 
@@ -29,7 +29,6 @@ export const Order4Styles = styled.main`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 25px;
     width: 100%;
   }
 
