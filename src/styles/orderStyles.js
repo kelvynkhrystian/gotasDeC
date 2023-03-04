@@ -53,6 +53,23 @@ export const OrderStyles = styled.main`
     outline: 5px solid #45322E;
   }
 
+  label > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    background-color: #45322E;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+  div > p:nth-child(2) {
+    background-color: #077515;
+  }
+
 
   @media (max-width:600px) {
     body {
