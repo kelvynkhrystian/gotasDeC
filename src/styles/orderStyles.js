@@ -8,7 +8,7 @@ export const OrderStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 50%;
+  height: 45%;
   width: 90%;
   padding: 10px;
 
@@ -37,7 +37,8 @@ export const OrderStyles = styled.main`
     width: 100%;
 
     a {
-      
+      border: none;
+      border-radius: 5px;
       width: 45%;
     }
 
