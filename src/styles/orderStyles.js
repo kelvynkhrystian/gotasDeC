@@ -19,7 +19,7 @@ export const OrderStyles = styled.main`
   }
 
   img {
-    width: 100px;
+    width: 90px;
   }
 
   article {
@@ -45,7 +45,7 @@ export const OrderStyles = styled.main`
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 2px;
     font-weight: bolder;
   }
 
