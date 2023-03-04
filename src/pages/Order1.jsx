@@ -26,7 +26,7 @@ function Order1() {
 
   return (
     <OrderStyles>
-      <h1>Escolha o tamanho!</h1>
+      <h1>1º Passo - Antes de qualquer coisa, decida o tamanho!</h1>
       <article>
         {sizes.map((option) => (
           <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>

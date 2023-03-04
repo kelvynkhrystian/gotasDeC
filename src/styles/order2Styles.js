@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const OrderStyles = styled.main`
+export const Order2Styles = styled.main`
 
   align-items: center;
   background-color: white;
@@ -8,13 +8,12 @@ export const OrderStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 50%;
+  height: 60%;
   width: 90%;
   padding: 10px;
 
   h1 {
     font-size: x-large;
-    font-weight: bolder;
     text-align: center;
     width: 100%;
   }
@@ -22,7 +21,7 @@ export const OrderStyles = styled.main`
   img {
     border-radius: 10px;
     margin-bottom: 10px;
-    width: 100px;
+    width: 90px;
   }
 
   article {
@@ -30,6 +29,7 @@ export const OrderStyles = styled.main`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 25px;
     width: 100%;
   }
 
@@ -86,7 +86,7 @@ export const OrderStyles = styled.main`
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 20px 5px;
     font-weight: bolder;
   }
 

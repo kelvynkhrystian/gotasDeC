@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { OrderStyles } from '../styles/orderStyles';
+import { Order2Styles } from '../styles/order2Styles';
 
 const casca = [
   {
@@ -28,8 +28,8 @@ function Order2() {
   };
 
   return (
-    <OrderStyles>
-      <h1>Escolha a casca!</h1>
+    <Order2Styles>
+      <h1>2º Passo - Agora escolha o casca que você quer experimentar!</h1>
       <article>
         {casca.map((option) => (
           <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>
@@ -50,7 +50,7 @@ function Order2() {
           <button disabled={!selectedOption}>Próximo</button>
         </Link>
       </article>
-    </OrderStyles>
+    </Order2Styles>
   );
 }
 
