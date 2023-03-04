@@ -8,7 +8,7 @@ export const OrderStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 60%;
+  height: 50%;
   width: 90%;
   padding: 10px;
 
@@ -19,7 +19,7 @@ export const OrderStyles = styled.main`
   }
 
   img {
-    width: 90px;
+    width: 100px;
   }
 
   article {
@@ -37,19 +37,35 @@ export const OrderStyles = styled.main`
     width: 100%;
 
     a {
-      border: 2px solid  #45322E;
-      border-radius: 5px;
-      width: 40%;
+      
+      width: 45%;
     }
 
     button {
+      border: 2px solid  #45322E;
+      border-radius: 5px;
       background-color: transparent;
       color: #45322E;
-      border: none;
       font-family: 'Tilt Warp', cursive;
       padding: 10px;
       width: 100%;
 
+    }
+
+    button:disabled {
+      /* filter: brightness(10%); */
+    }
+
+    button:active {
+      transform: scale(0.9);
+    }
+
+    a:nth-child(2) {
+      background-color: #45322E;
+
+      button:nth-child(1) {
+        color: #fff;
+      }
     }
   }
 
