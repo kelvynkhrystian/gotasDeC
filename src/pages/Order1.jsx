@@ -26,7 +26,7 @@ function Order1() {
 
   return (
     <OrderStyles>
-      <h1>Qual tamanho você gostaria?</h1>
+      <h1>Escolha o tamanho!</h1>
       <article>
         {sizes.map((option) => (
           <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>
@@ -34,7 +34,7 @@ function Order1() {
             <img src={option.image} alt={`Option ${option.name}`} />
             <div>
               <p>{option.name}</p>
-              <p>R$ {option.price.toFixed(2)}</p>
+              <p>R$ {option.price}</p>
             </div>
           </label>
         ))}

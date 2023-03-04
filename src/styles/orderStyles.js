@@ -8,7 +8,7 @@ export const OrderStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 50%;
+  height: 70%;
   width: 90%;
   padding: 10px;
 
@@ -45,7 +45,7 @@ export const OrderStyles = styled.main`
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 10px 2px;
+    padding: 20px 10px;
     font-weight: bolder;
   }
 
