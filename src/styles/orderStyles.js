@@ -53,20 +53,20 @@ export const OrderStyles = styled.main`
 
     }
 
-    button:disabled {
-      /* filter: brightness(10%); */
-    }
-
-    button:active {
-      transform: scale(0.9);
-    }
-
     a:nth-child(2) {
       background-color: #45322E;
 
       button:nth-child(1) {
         color: #fff;
       }
+    }
+
+    button:disabled {
+      opacity: 10%;
+    }
+
+    button:active {
+      transform: scale(0.9);
     }
   }
 
