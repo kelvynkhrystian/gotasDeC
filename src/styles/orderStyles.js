@@ -9,7 +9,7 @@ export const OrderStyles = styled.main`
   flex-direction: column;
   justify-content: space-around;
   height: 45%;
-  width: 80%;
+  width: 85%;
   padding: 10px;
 
   h1 {
