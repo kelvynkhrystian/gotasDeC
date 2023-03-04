@@ -24,12 +24,31 @@ export const HomeStyles = styled.main`
   }
 
   button {
-    border-radius: 10px;
-    background-color: transparent;
-    display: none;
-    height: 50px;
-    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    /* border: 2px solid #ee78b3; */
+    background-color: #45322E;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: pulse 2s ease-in-out infinite;
   }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 
   @media (max-width:600px) {
     body {

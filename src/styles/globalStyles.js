@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     /* background-color: #fbe0de; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     height: 100vh;
     width: 100%;
   }
