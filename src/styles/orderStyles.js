@@ -8,7 +8,7 @@ export const OrderStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 70%;
+  height: 60%;
   width: 90%;
   padding: 10px;
 
@@ -30,7 +30,27 @@ export const OrderStyles = styled.main`
   }
 
   article:nth-child(3) {
-    width: 50%;
+    align-items: center;
+    /* background-color: #077515; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    a {
+      border: 2px solid  #45322E;
+      border-radius: 5px;
+      width: 40%;
+    }
+
+    button {
+      background-color: transparent;
+      color: #45322E;
+      border: none;
+      font-family: 'Tilt Warp', cursive;
+      padding: 10px;
+      width: 100%;
+
+    }
   }
 
   /* HIDE RADIO */
@@ -71,9 +91,6 @@ export const OrderStyles = styled.main`
     background-color: #077515;
   }
 
-  a {
-    font-family: 'Tilt Warp', cursive;
-  }
 
 
   @media (max-width:600px) {
