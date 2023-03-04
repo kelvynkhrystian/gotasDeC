@@ -10,7 +10,7 @@ export const OrderStyles = styled.main`
   justify-content: space-around;
   height: 50%;
   width: 90%;
-  padding: 5%;
+  padding: 10px;
 
   h1 {
     font-size: x-large;
@@ -46,11 +46,12 @@ export const OrderStyles = styled.main`
     display: flex;
     flex-direction: column;
     padding: 10px;
+    font-weight: bolder;
   }
 
   label.selected {
     border-radius: 10px;
-    outline: 5px solid #45322E;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
   }
 
   label > div {
@@ -70,8 +71,8 @@ export const OrderStyles = styled.main`
     background-color: #077515;
   }
 
-  article > link {
-    position: absolute;
+  a {
+    font-family: 'Tilt Warp', cursive;
   }
 
 
