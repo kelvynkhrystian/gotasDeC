@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+
 import { HomeStyles } from '../styles/homeStyles'
 
 function Home() {
-
-  setTimeout(() => console.log('Initial timeout!'), 1000);
-
   return (
     <HomeStyles>
         <article>
@@ -14,7 +12,7 @@ function Home() {
         <div>
           <img src="https://www.toalhapromocional.com.br/images/loading-produto.gif" alt="carregando" />
           <Link to="/order1" >
-            <button>Iniciar Pedido </button>
+            <button>Iniciar Pedido</button>
           </Link>
         </div>
     </HomeStyles>

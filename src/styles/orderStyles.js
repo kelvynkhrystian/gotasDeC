@@ -9,11 +9,13 @@ export const OrderStyles = styled.main`
   flex-direction: column;
   justify-content: space-around;
   height: 40%;
-  width: 85%;
+  width: 90%;
+  padding: 5%;
 
   h1 {
+    font-size: x-large;
     text-align: center;
-    width: 95%;
+    width: 100%;
   }
 
   img {
@@ -24,7 +26,7 @@ export const OrderStyles = styled.main`
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    width: 95%;
+    width: 100%;
   }
 
   article:nth-child(3) {
