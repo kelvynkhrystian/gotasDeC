@@ -9,6 +9,7 @@ export const HomeStyles = styled.main`
   height: 100vh;
   
   img {
+    animation: pulse 2s ease-in-out infinite;
     width: 300px;
   }
 
@@ -29,12 +30,15 @@ export const HomeStyles = styled.main`
     /* border: 2px solid #ee78b3; */
     background-color: #45322E;
     color: white;
+    font-family: 'Tilt Warp', cursive;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
-    animation: pulse 2s ease-in-out infinite;
+    /* animation: pulse 2s ease-in-out infinite; */
+    height: 50px;
+    width: 300px;
   }
 
   @keyframes pulse {
@@ -42,7 +46,7 @@ export const HomeStyles = styled.main`
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
     100% {
       transform: scale(1);
