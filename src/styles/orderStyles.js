@@ -19,6 +19,8 @@ export const OrderStyles = styled.main`
   }
 
   img {
+    border-radius: 10px;
+    margin-bottom: 10px;
     width: 100px;
   }
 
