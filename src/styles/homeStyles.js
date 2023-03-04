@@ -11,7 +11,6 @@ export const HomeStyles = styled.main`
   
   img {
     animation: pulse 2s ease-in-out infinite;
-    
     width: 300px;
   }
 
@@ -29,7 +28,6 @@ export const HomeStyles = styled.main`
   button {
     display: inline-block;
     padding: 10px 20px;
-    /* border: 2px solid #ee78b3; */
     background-color: #45322E;
     color: white;
     font-family: 'Tilt Warp', cursive;
