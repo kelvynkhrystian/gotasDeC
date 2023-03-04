@@ -7,6 +7,7 @@ export const HomeStyles = styled.main`
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
+  width: 100%;
   /* opacity: 0.5; */
   
   img {

@@ -8,7 +8,7 @@ export const OrderStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 40%;
+  height: 50%;
   width: 90%;
   padding: 5%;
 
@@ -31,7 +31,27 @@ export const OrderStyles = styled.main`
 
   article:nth-child(3) {
     width: 50%;
-}
+  }
+
+  /* HIDE RADIO */
+  [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  label {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  label.selected {
+    border-radius: 10px;
+    outline: 5px solid #45322E;
+  }
 
 
   @media (max-width:600px) {
