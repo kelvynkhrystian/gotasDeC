@@ -7,9 +7,11 @@ export const HomeStyles = styled.main`
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
+  /* opacity: 0.5; */
   
   img {
     animation: pulse 2s ease-in-out infinite;
+    
     width: 300px;
   }
 
