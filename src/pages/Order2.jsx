@@ -41,7 +41,7 @@ function Order2() {
       </article>
 
       <article>
-        <Link to="/order2">
+        <Link to="/order1">
           <button>Anterior</button>
         </Link>
         <Link to="/order3">
