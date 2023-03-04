@@ -41,6 +41,10 @@ export const HomeStyles = styled.main`
     width: 300px;
   }
 
+  button:active {
+    transform: scale(0.9);
+  }
+
   @keyframes pulse {
     0% {
       transform: scale(1);
