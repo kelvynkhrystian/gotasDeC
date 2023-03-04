@@ -2,35 +2,42 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { OrderStyles } from '../styles/orderStyles';
 
-function Order1() {
-  const [selectedLabel, setSelectedLabel] = useState('');
+const sizes = [
+  {
+    id: '250g',
+    name: '250g',
+    price: 25,
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca250g.png?raw=true',
+  },
+  {
+    id: '350g',
+    name: '350g',
+    price: 35,
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca350g.png?raw=true',
+  },
+];
 
-  const handleLabelClick = (label) => {
-    console.log(selectedLabel);
-    setSelectedLabel(label);
-  }
+function Order1() {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
 
   return (
     <OrderStyles>
-      <h1>Qual tamanho vc gostaria?</h1>
+      <h1>Qual tamanho você gostaria?</h1>
       <article>
-        <label onClick={() => handleLabelClick('250g')} className={selectedLabel === '250g' ? 'selected' : ''}>
-          <input type="radio" name="size" value="250g" checked={selectedLabel === '250g'} />
-          <img src="https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca250g.png?raw=true" alt="Option 1" />
-          <div>
-            <p>250g</p>
-            <p>R$ 25</p>
-          </div>
-          
-        </label>
-        <label onClick={() => handleLabelClick('350g')} className={selectedLabel === '350g' ? 'selected' : ''}>
-          <input type="radio" name="size" value="350g" checked={selectedLabel === '350g'} />
-          <img src="https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca350g.png?raw=true" alt="Option 2" />
-          <div>
-            <p>350g</p>
-            <p>R$ 35</p>
-          </div>
-        </label>
+        {sizes.map((option) => (
+          <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>
+            <input type="radio" id={option.id} value={option.id} checked={selectedOption === option} onChange={() => handleOptionClick(option)} />
+            <img src={option.image} alt={`Option ${option.name}`} />
+            <div>
+              <p>{option.name}</p>
+              <p>R$ {option.price.toFixed(2)}</p>
+            </div>
+          </label>
+        ))}
       </article>
 
       <article>
@@ -38,11 +45,11 @@ function Order1() {
           <button>Anterior</button>
         </Link>
         <Link to="/order2">
-          <button disabled={!selectedLabel}>Próximo</button>
+          <button disabled={!selectedOption}>Próximo</button>
         </Link>
       </article>
     </OrderStyles>
-  )
+  );
 }
 
 export default Order1;

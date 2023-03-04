@@ -70,6 +70,10 @@ export const OrderStyles = styled.main`
     background-color: #077515;
   }
 
+  article > link {
+    position: absolute;
+  }
+
 
   @media (max-width:600px) {
     body {
