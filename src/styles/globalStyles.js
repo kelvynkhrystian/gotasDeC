@@ -18,18 +18,18 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     align-items: center;
-    color: white;
-    background-color: #0f0f0f;
+    color: black;
+    background-color: #fac2c7;
+    /* background-color: #fbe0de; */
     display: flex;
     flex-direction: column;
-    font-family: 'Patua One', cursive;
     justify-content: flex-start;
     height: 100vh;
     width: 100%;
   }
 
 
-  @media (min-width:600px) {
+  @media (max-width:600px) {
     body {
       /* background-color: blue; */
     };
