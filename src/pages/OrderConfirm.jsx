@@ -41,7 +41,7 @@ function OrderConfirm() {
             <h2>Tamanho</h2>
             <div>
               <p>150g</p>
-              <p>R$ 25,00</p>
+              <p>R$ 25</p>
             </div>
           </div>
           <div>
@@ -60,13 +60,16 @@ function OrderConfirm() {
             <h2>Adicionais</h2>
             <div>
               <p>Nenhum</p>
+              <p>R$ 0</p>
             </div>
           </div>
-          <h1>Valor total : R$ 25,00</h1>
+          <div>
+            <h1>{`Valor total:`} <span>{`R$ ${pedido.valor},00`}</span></h1>
+          </div>
         </section>
 
         
-        <h2>Antes de efetuar o pedido, diga seu nome para que possamos lhe atender melhor</h2>
+        <h3>Antes de efetuar o pedido, diga seu nome para que possamos lhe atender melhor</h3>
 
         <input type="text" placeholder='digite seu nome'/>
       </article>

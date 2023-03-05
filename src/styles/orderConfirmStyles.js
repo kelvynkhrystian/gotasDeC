@@ -12,6 +12,25 @@ export const OrderConfirmStyles = styled.main`
   width: 90%;
   padding: 10px;
 
+  h3 {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+
+  input {
+    font-size: large;
+    padding: 10px 5px;
+    height: 40px;
+    width: 95%;
+  }
+
+  span {
+    color: #fff;
+    background-color: #077515;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
   section {
     
     width: 90%;
