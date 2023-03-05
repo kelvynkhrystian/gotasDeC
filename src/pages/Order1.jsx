@@ -4,14 +4,14 @@ import { OrderStyles } from '../styles/orderStyles';
 
 const sizes = [
   {
-    id: '250g',
-    name: '250g',
+    id: '150g',
+    name: '150g',
     price: 25,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca250g.png?raw=true',
   },
   {
-    id: '350g',
-    name: '350g',
+    id: '250g',
+    name: '250g',
     price: 35,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca350g.png?raw=true',
   },
