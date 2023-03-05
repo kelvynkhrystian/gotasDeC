@@ -1,37 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { OrderConfirmStyles } from '../styles/orderConfirmStyles';
 
+import OrderContext from '../context/OrderContext';
+
 function OrderConfirm() {
+
+  const { tamanho, casca, recheio, adicional, nome, pagamento, valor } = useContext(OrderContext)
 
   // const negrito = '*Kelvyn*';
   // const italico = '_Kelvyn_';
   // const taxado = '*~texto~';
   // const quebraDelinha = %0a
 
-  // aqui vou receber os dados do context api para formular a mensagem
-  const pedido = {
-    tamanho:'150g',
-    casca: 'Ao Leite',
-    recheio: 'Brigadeiro',
-    adicional: 'Morango',
-    nome: 'Mariana',
-    pagamento: 'Pix',
-    valor: 25,
-  }
-
   const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
   const title = '*Gotas de Chocolate*%0a%0a';
-  const nome = `*Nome*: _${pedido.nome}_%0a`;
-  const tamanho = `*Tamanho*: _${pedido.tamanho}_%0a`;
-  const casca = `*Casca*: _${pedido.casca}_%0a`;
-  const recheio = `*Recheio*: _${pedido.recheio}_%0a`;
-  const adicional = `*Adicional*: _${pedido.adicional}_%0a`;
-  const pagamento = `*Forma de pagamento*: _${pedido.pagamento}_%0a%0a`;
-  const valor = `*Total*: R$ _${pedido.valor}_,00`;
+  const name = `*Nome*: _${nome}_%0a`;
+  const size = `*Tamanho*: _${tamanho}_%0a`;
+  const shell = `*Casca*: _${casca}_%0a`;
+  const filling = `*Recheio*: _${recheio}_%0a`;
+  const additional = `*Adicional*: _${adicional}_%0a`;
+  const payment = `*Forma de pagamento*: _${pagamento}_%0a%0a`;
+  const value = `*Total*: R$ _${valor}_,00`;
 
-  const message = `${title}${nome}${tamanho}${casca}${recheio}${adicional}${pagamento}${valor}`
+  const message = `${title}${name}${size}${shell}${filling}${additional}${payment}${value}`
   const url = `${api}phone=${fone}&text=${message}`;
 
   return (
@@ -66,7 +59,7 @@ function OrderConfirm() {
             </div>
           </div>
           <div>
-            <h1>{`Valor total:`} <span>{`R$ ${pedido.valor},00`}</span></h1>
+            <h1>{`Valor total:`} <span>{`R$ ${valor},00`}</span></h1>
           </div>
         </section>
 
