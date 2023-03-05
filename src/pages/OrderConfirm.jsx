@@ -13,24 +13,25 @@ function OrderConfirm() {
   const pedido = {
     tamanho:'150g',
     casca: 'Ao Leite',
-    recheio: 'brigadeiro',
+    recheio: 'Brigadeiro',
     adicional: 'Morango',
     nome: 'Mariana',
+    pagamento: 'Pix',
     valor: 25,
   }
 
   const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
-  const title = '*Gotas de Chocolate*';
-  const nome = `*Nome*: _${pedido.nome}_`;
-  const tamanho = `*Tamanho*: _${pedido.tamanho}_`;
-  const casca = `*Casca*: _${pedido.casca}_`;
-  const recheio = `*Recheio*: _${pedido.recheio}_`;
-  const adicional = `*Adicional*: _${pedido.adicional}_`;
+  const title = '*Gotas de Chocolate*%0a%0a';
+  const nome = `*Nome*: _${pedido.nome}_%0a`;
+  const tamanho = `*Tamanho*: _${pedido.tamanho}_%0a`;
+  const casca = `*Casca*: _${pedido.casca}_%0a`;
+  const recheio = `*Recheio*: _${pedido.recheio}_%0a`;
+  const adicional = `*Adicional*: _${pedido.adicional}_%0a`;
+  const pagamento = `*Forma de pagamento*: _${pedido.pagamento}_%0a%0a`;
   const valor = `*Total*: R$ _${pedido.valor}_,00`;
 
-
-  const message = `${title}%0a%0a${nome}%0a${tamanho}%0a${casca}%0a${recheio}%0a${adicional}%0a%0a${valor}`
+  const message = `${title}${nome}${tamanho}${casca}${recheio}${adicional}${pagamento}${valor}`
   const url = `${api}phone=${fone}&text=${message}`;
 
   return (
