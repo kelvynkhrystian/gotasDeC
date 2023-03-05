@@ -42,7 +42,7 @@ function OrderConfirm() {
           <div>
             <h2>Casca</h2>
             <div>
-              <p>Ao Leite</p>
+              <p>{`${casca}`}</p>
             </div>
           </div>
           <div>
