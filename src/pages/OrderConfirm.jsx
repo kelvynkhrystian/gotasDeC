@@ -25,11 +25,12 @@ function OrderConfirm() {
   const nome = `*Nome*: _${pedido.nome}_`;
   const tamanho = `*Tamanho*: _${pedido.tamanho}_`;
   const casca = `*Casca*: _${pedido.casca}_`;
+  const recheio = `*Recheio*: _${pedido.recheio}_`;
   const adicional = `*Adicional*: _${pedido.adicional}_`;
   const valor = `*Total*: R$ _${pedido.valor}_,00`;
 
 
-  const message = `${title}%0a%0a${nome}%0a${tamanho}%0a${casca}%0a${adicional}%0a%0a${valor}`
+  const message = `${title}%0a%0a${nome}%0a${tamanho}%0a${casca}%0a${recheio}%0a${adicional}%0a%0a${valor}`
   const url = `${api}phone=${fone}&text=${message}`;
 
   return (
