@@ -35,8 +35,8 @@ function OrderConfirm() {
           <div>
             <h2>Tamanho</h2>
             <div>
-              <p>150g</p>
-              <p>R$ 25</p>
+              <p>{`${tamanho}`}</p>
+              <p>{`${tamanho=== '150g' ? 'R$ 25' : 'R$ 35'}`}</p>
             </div>
           </div>
           <div>
@@ -48,14 +48,14 @@ function OrderConfirm() {
           <div>
             <h2>Recheio</h2>
             <div>
-              <p>Brigadeiro</p>
+              <p>{`${recheio}`}</p>
             </div>
           </div>
           <div>
             <h2>Adicionais</h2>
             <div>
-              <p>Nenhum</p>
-              <p>R$ 0</p>
+              <p>{`${adicional}`}</p>
+              <p>{`${adicional=== 'Nenhum' ? 'R$ 0' : 'R$ 5'}`}</p>
             </div>
           </div>
           <div>
