@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Order3Styles } from '../styles/order3Styles';
+
+import OrderContext from '../context/OrderContext';
 
 const flavors = [
   {
@@ -27,9 +29,11 @@ const flavors = [
 
 function Order3() {
   const [selectedOption, setSelectedOption] = useState(null);
+  const order = useContext(OrderContext);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    order.recheio = option.name
   };
 
   return (

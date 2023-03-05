@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { OrderStyles } from '../styles/orderStyles';
+
+import OrderContext from '../context/OrderContext';
 
 const sizes = [
   {
@@ -19,10 +21,14 @@ const sizes = [
 
 function Order1() {
   const [selectedOption, setSelectedOption] = useState(null);
+  const order = useContext(OrderContext);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    order.tamanho = option.name
+    order.valor = option.name === '150g' ? 25 : 35
   };
+
 
   return (
     <OrderStyles>

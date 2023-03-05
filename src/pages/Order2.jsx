@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Order2Styles } from '../styles/order2Styles';
+
+import OrderContext from '../context/OrderContext';
 
 const casca = [
   {
@@ -22,9 +24,11 @@ const casca = [
 
 function Order2() {
   const [selectedOption, setSelectedOption] = useState(null);
+  const order = useContext(OrderContext);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    order.casca = option.name
   };
 
   return (

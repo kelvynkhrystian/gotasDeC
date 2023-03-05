@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Order4Styles } from '../styles/order4Styles';
+
+import OrderContext from '../context/OrderContext';
 
 const flavors = [
   {
@@ -31,9 +33,12 @@ const flavors = [
 
 function Order4() {
   const [selectedOption, setSelectedOption] = useState(null);
+  const order = useContext(OrderContext);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    order.adicional = option.name
+    order.valor = option.name === 'Nenhum' ? order.valor : order.valor + 5
   };
 
   return (
