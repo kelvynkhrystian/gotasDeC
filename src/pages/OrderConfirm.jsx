@@ -34,9 +34,41 @@ function OrderConfirm() {
 
   return (
     <OrderConfirmStyles>
-      <h1>5º Passo - O que acha de confirmar-mos o seu pedido antes de envia-lo?</h1>
+      <h1>5º Passo - E último, vamos confirmar seu pedido!</h1>
       <article>
+        <section>
+          <div>
+            <h2>Tamanho</h2>
+            <div>
+              <p>150g</p>
+              <p>R$ 25,00</p>
+            </div>
+          </div>
+          <div>
+            <h2>Casca</h2>
+            <div>
+              <p>Ao Leite</p>
+            </div>
+          </div>
+          <div>
+            <h2>Recheio</h2>
+            <div>
+              <p>Brigadeiro</p>
+            </div>
+          </div>
+          <div>
+            <h2>Adicionais</h2>
+            <div>
+              <p>Nenhum</p>
+            </div>
+          </div>
+          <h1>Valor total : R$ 25,00</h1>
+        </section>
+
         
+        <h2>Antes de efetuar o pedido, diga seu nome para que possamos lhe atender melhor</h2>
+
+        <input type="text" placeholder='digite seu nome'/>
       </article>
 
       <article>

@@ -8,9 +8,39 @@ export const OrderConfirmStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 50%;
+  height: 80%;
   width: 90%;
   padding: 10px;
+
+  section {
+    
+    width: 90%;
+    margin-bottom: 25px;
+
+    h1 {
+      align-items: center;
+      border-radius: 5px;
+      border-bottom: 1px solid #45322E;
+      padding: 10px;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-weight: bolder;
+    }
+
+    div > h2 {
+      /* color: brown; */
+      font-weight: bolder;
+    }
+  }
 
   h1 {
     font-size: x-large;
@@ -35,7 +65,6 @@ export const OrderConfirmStyles = styled.main`
 
   article:nth-child(3) {
     align-items: center;
-    /* background-color: #077515; */
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -60,7 +89,7 @@ export const OrderConfirmStyles = styled.main`
     a:nth-child(2) {
 
       text-decoration: none;
-      
+
       button:nth-child(1) {
 
         align-items: center;
@@ -125,16 +154,9 @@ export const OrderConfirmStyles = styled.main`
     background-color: #077515;
   }
 
-  /* a.whatsapp {
-    width: 90%;
-    background-color: #077515;
-  } */
-
-
-
   @media (max-width:600px) {
     body {
-      /* background-color: blue; */
+      
     };
   }
 `;
