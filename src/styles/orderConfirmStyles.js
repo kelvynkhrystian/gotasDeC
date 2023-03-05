@@ -59,14 +59,15 @@ export const OrderConfirmStyles = styled.main`
 
     a:nth-child(2) {
 
-      background-color: #4df063;
-
+      text-decoration: none;
+      
       button:nth-child(1) {
 
         align-items: center;
         background-color: #149e27;
         display: flex;
         justify-content: center;
+        text-decoration: none;
 
         img {
           margin-left: 5px;
