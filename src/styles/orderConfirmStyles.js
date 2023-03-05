@@ -47,23 +47,35 @@ export const OrderConfirmStyles = styled.main`
     }
 
     button {
-      border: 2px solid  #45322E;
+      background-color: #45322E;
+      border: none;
       border-radius: 5px;
-      background-color: transparent;
-      color: #45322E;
+      color: #fff;
       font-family: 'Tilt Warp', cursive;
-      padding: 10px;
+      height: 40px;
       width: 100%;
 
     }
 
     a:nth-child(2) {
-      background-color: #45322E;
+
+      background-color: #4df063;
 
       button:nth-child(1) {
-        color: #fff;
+
+        align-items: center;
+        background-color: #149e27;
+        display: flex;
+        justify-content: center;
+
+        img {
+          margin-left: 5px;
+          margin-bottom: 0;
+          width: 25px;
+        }
       }
     }
+
 
     button:disabled {
       opacity: 10%;
@@ -111,6 +123,11 @@ export const OrderConfirmStyles = styled.main`
   div > p:nth-child(2) {
     background-color: #077515;
   }
+
+  /* a.whatsapp {
+    width: 90%;
+    background-color: #077515;
+  } */
 
 
 

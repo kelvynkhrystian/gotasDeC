@@ -21,12 +21,12 @@ function OrderConfirm() {
 
   const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
-  const title = '*Gotas de Chocolate - Pedido 001*';
+  const title = '*Gotas de Chocolate*';
   const nome = `*Nome*: _${pedido.nome}_`;
   const tamanho = `*Tamanho*: _${pedido.tamanho}_`;
   const casca = `*Casca*: _${pedido.casca}_`;
   const adicional = `*Adicional*: _${pedido.adicional}_`;
-  const valor = `*Valor votal da compra*: R$ _${pedido.valor}_,00`;
+  const valor = `*Total*: R$ _${pedido.valor}_,00`;
 
 
   const message = `${title}%0a%0a${nome}%0a${tamanho}%0a${casca}%0a${adicional}%0a%0a${valor}`
@@ -43,12 +43,9 @@ function OrderConfirm() {
         <Link to="/order4">
           <button>Anterior</button>
         </Link>
-        <Link to="/confirm">
-          <button>Próximo</button>
-        </Link>
 
-        <a href={url} target='blank'>
-          Enviar via whatsapp
+        <a href={url} target='blank' className='whatsapp'>
+          <button>Enviar<img src="https://raw.githubusercontent.com/kelvynkhrystian/gotasdechocolate/main/src/images/WhatsApp.svg.webp" alt="logo whatsapp" /> </button>
         </a>
       </article>
     </OrderConfirmStyles>
