@@ -13,6 +13,8 @@ function OrderConfirm() {
   // const taxado = '*~texto~';
   // const quebraDelinha = %0a
 
+  console.log(tamanho);
+
   const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
   const title = '*Gotas de Chocolate*%0a%0a';
