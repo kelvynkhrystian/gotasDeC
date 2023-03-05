@@ -15,7 +15,7 @@ const flavors = [
   },
   {
     id: 'ninho',
-    name: 'Ninho',
+    name: 'Ninho c/Nut',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ninho.png?raw=true',
   },
   {
