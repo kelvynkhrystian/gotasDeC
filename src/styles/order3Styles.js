@@ -85,7 +85,7 @@ export const Order3Styles = styled.main`
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 20px 5px;
+    padding: 10px 15px;
     font-weight: bolder;
   }
 
