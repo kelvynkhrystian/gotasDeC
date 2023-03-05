@@ -7,7 +7,7 @@ const flavors = [
     id: 'no',
     name: 'Nenhum',
     price: 0,
-    image: 'https://static.vecteezy.com/system/resources/previews/001/194/357/non_2x/no-sign-cross-png.png',
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/x.png?raw=true',
   },
   {
     id: 'morango',

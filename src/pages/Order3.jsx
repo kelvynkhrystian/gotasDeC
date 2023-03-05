@@ -11,12 +11,12 @@ const flavors = [
   {
     id: 'ferreiro',
     name: 'Ferrero R.',
-    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ninhoComNutella.png?raw=true',
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ferrero.png?raw=true',
   },
   {
     id: 'ninho',
-    name: 'Ninho com Nutela',
-    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ninhoComNutella.png?raw=true',
+    name: 'Ninho',
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ninho.png?raw=true',
   },
   {
     id: 'mouse',

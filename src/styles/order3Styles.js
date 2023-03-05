@@ -8,7 +8,7 @@ export const Order3Styles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 80%;
+  height: 85%;
   width: 90%;
   padding: 10px;
 
@@ -21,7 +21,7 @@ export const Order3Styles = styled.main`
   img {
     border-radius: 10px;
     margin-bottom: 10px;
-    width: 90px;
+    width: 110px;
   }
 
   article {
