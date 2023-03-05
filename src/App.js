@@ -18,7 +18,7 @@ const defaultOrderValues = {
   adicional: 'Nenhum',
   nome: 'Kelvyn',
   pagamento: 'Pix',
-  valor: 25,
+  valor: 0,
 };
 
 function App() {
