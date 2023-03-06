@@ -83,7 +83,7 @@ function OrderConfirm() {
         </Link>
 
         <Link to="/redirect" className='whatsapp'>
-        <button>Enviar<img src="https://raw.githubusercontent.com/kelvynkhrystian/gotasdechocolate/main/src/images/WhatsApp.svg.webp" alt="logo whatsapp" /> </button>
+          <button>Enviar<img src="https://raw.githubusercontent.com/kelvynkhrystian/gotasdechocolate/main/src/images/WhatsApp.svg.webp" alt="logo whatsapp" /> </button>
         </Link>
       </article>
     </OrderConfirmStyles>

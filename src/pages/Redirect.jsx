@@ -21,7 +21,7 @@ function Redirect() {
 
   useEffect(() => {
     if (seconds === 0) {
-      window.location.href = `https://api.whatsapp.com/send?phone=${fone}&text=${message}`;
+      window.location.replace = `https://api.whatsapp.com/send?phone=${fone}&text=${message}`;
     }
   }, [seconds, message, fone]);
 
