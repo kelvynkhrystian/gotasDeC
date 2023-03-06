@@ -40,7 +40,6 @@ export const OrderConfirmStyles = styled.main`
     height: 40px;
     width: 90%;
     margin-top: 5px;
-    margin-bottom: 10px;
   }
 
   span {
