@@ -30,7 +30,7 @@ function Redirect() {
     }, 1000);
 
     if (seconds === 0) {
-      window.location.href = url;
+      window.open(url, "blank");
     }
 
     return () => clearInterval(interval);
