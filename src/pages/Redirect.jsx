@@ -4,42 +4,26 @@ import OrderContext from '../context/OrderContext';
 import { RedirectStyles } from '../styles/redirectStyles';
 
 function Redirect() {
-
   const { order } = useContext(OrderContext);
   console.log(order);
   const [seconds, setSeconds] = useState(10);
 
-  const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
-  const title = '*Gotas de Chocolate*%0a%0a';
-  const name = `*Nome*: _${order.nome}_%0a`;
-  const size = `*Tamanho*: _${order.tamanho}_%0a`;
-  const shell = `*Casca*: _${order.casca}_%0a`;
-  const filling = `*Recheio*: _${order.recheio}_%0a`;
-  const additional = `*Adicional*: _${order.adicional}_%0a`;
-  const payment = `*Forma de pagamento*: _${order.pagamento}_%0a%0a`;
-  const value = `*Total*: R$ _${order.valor}_,00`;
-  
-  const message = `${title}${name}${size}${shell}${filling}${additional}${payment}${value}`
-  const url = `${api}phone=${fone}&text=${message}`;
+  const message = `*Gotas de Chocolate*%0a%0a*Nome*: _${order.nome}_%0a*Tamanho*: _${order.tamanho}_%0a*Casca*: _${order.casca}_%0a*Recheio*: _${order.recheio}_%0a*Adicional*: _${order.adicional}_%0a*Forma de pagamento*: _${order.pagamento}_%0a%0a*Total*: R$ _${order.valor}_,00`;
 
   useEffect(() => {
-
     const interval = setInterval(() => {
       setSeconds((prevSeconds) => prevSeconds - 1);
     }, 1000);
 
-    if (seconds === 0) {
-      window.open(url, "blank");
-    }
-
     return () => clearInterval(interval);
-  }, [seconds, url]);
+  }, []);
 
-
-  // setTimeout(function() {
-  //   window.location.href = `${url}`;
-  // }, 5000);
+  useEffect(() => {
+    if (seconds === 0) {
+      window.location.href = `https://api.whatsapp.com/send?phone=${fone}&text=${message}`;
+    }
+  }, [seconds, message, fone]);
 
   return (
     <RedirectStyles>
@@ -48,9 +32,8 @@ function Redirect() {
       <h3>Lembrando que para sua encomenda seja preparada, pedimos 50% do valor do seu pedido antecipadamente!</h3>
       <span>{seconds}</span>
       <p>Agora você será redirecionado para o whatsapp</p>
-      
     </RedirectStyles>
-  )
+  );
 }
 
-export default Redirect
+export default Redirect;
