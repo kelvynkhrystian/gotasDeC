@@ -26,8 +26,6 @@ function Order2() {
   const [selectedOption, setSelectedOption] = useState(null);
   const { order, setOrder} = useContext(OrderContext);
 
-  console.log(order);
-
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setOrder({...order, casca: option.name})

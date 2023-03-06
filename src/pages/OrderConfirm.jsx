@@ -7,8 +7,6 @@ import OrderContext from '../context/OrderContext';
 function OrderConfirm() {
 
   const {order, setOrder} = useContext(OrderContext);
-
-  console.log(order);
   
   const handleOptionChange = (event) => {
     const n = event.target.value;
@@ -21,7 +19,6 @@ function OrderConfirm() {
   const handleSelectChange = (event) => {
     const s = event.target.value;
 
-    console.log(s);
     setOrder({
       ...order,
       pagamento: s,

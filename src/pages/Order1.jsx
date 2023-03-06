@@ -23,8 +23,6 @@ function Order1() {
   const [selectedOption, setSelectedOption] = useState(null);
   const { order, setOrder} = useContext(OrderContext);
 
-  console.log(order);
-
   const handleOptionClick = (option) => {
     setSelectedOption(option);
 
