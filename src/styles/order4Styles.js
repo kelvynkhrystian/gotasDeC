@@ -10,7 +10,7 @@ export const Order4Styles = styled.main`
   justify-content: space-evenly;
   font-family: 'Tilt Neon', cursive;
   width: 90%;
-  height: 80%;
+  height: 90%;
   padding: 10px;
 
   h1 {
