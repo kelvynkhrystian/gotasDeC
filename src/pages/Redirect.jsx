@@ -6,6 +6,7 @@ import { RedirectStyles } from '../styles/redirectStyles';
 function Redirect() {
 
   const { order } = useContext(OrderContext);
+  console.log(order);
   const [seconds, setSeconds] = useState(10);
   const [redirect, setRedirect] = useState(false);
 
