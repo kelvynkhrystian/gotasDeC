@@ -38,10 +38,10 @@ export const OrderConfirmStyles = styled.main`
 
     h1 {
       align-items: center;
-      border-radius: 5px;
       border-bottom: 1px solid #45322E;
       padding: 10px;
       margin-top: 25px;
+      padding-bottom: 20px;
       text-align: center;
     }
 
