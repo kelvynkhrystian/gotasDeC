@@ -22,7 +22,6 @@ export const Order4Styles = styled.main`
 
   img {
     border-radius: 10px;
-    margin-bottom: 10px;
     width: 70px;
   }
 
@@ -90,8 +89,9 @@ export const Order4Styles = styled.main`
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 20px 5px;
+    padding: 10px 5px;
     font-weight: bolder;
+    width: 170px;
   }
 
   label.selected {
@@ -102,8 +102,8 @@ export const Order4Styles = styled.main`
   label > div {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   p {

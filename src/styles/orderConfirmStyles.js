@@ -12,8 +12,6 @@ export const OrderConfirmStyles = styled.main`
   height: 90%;
   width: 90%;
   padding: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 
   h3 {
     width: 90%;
