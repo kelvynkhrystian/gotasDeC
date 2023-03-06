@@ -8,6 +8,7 @@ export const OrderConfirmStyles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-family: 'Tilt Neon', cursive;
   height: 80%;
   width: 90%;
   padding: 10px;

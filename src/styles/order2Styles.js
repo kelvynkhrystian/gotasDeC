@@ -8,6 +8,7 @@ export const Order2Styles = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-family: 'Tilt Neon', cursive;
   height: 60%;
   width: 90%;
   padding: 10px;
