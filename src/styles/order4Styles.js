@@ -31,6 +31,8 @@ export const Order4Styles = styled.main`
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   article:nth-child(3) {
@@ -39,8 +41,7 @@ export const Order4Styles = styled.main`
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
 
     a {
       border: none;
@@ -91,7 +92,7 @@ export const Order4Styles = styled.main`
     flex-direction: column;
     padding: 10px 5px;
     font-weight: bolder;
-    width: 170px;
+    width: 150px;
   }
 
   label.selected {
@@ -110,7 +111,7 @@ export const Order4Styles = styled.main`
     background-color: #45322E;
     border-radius: 5px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 6px;
     margin: 2px;
   }
 
