@@ -40,7 +40,7 @@ function Redirect() {
   useEffect(() => {
     if (redirect) {
       const timeout = setTimeout(() => {
-        window.location = `${url}`;
+        window.open =(`${url}`, '_blank');
       }, 0);
 
       return () => clearTimeout(timeout);
