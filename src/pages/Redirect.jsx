@@ -6,7 +6,7 @@ import { RedirectStyles } from '../styles/redirectStyles';
 function Redirect() {
 
   const { order } = useContext(OrderContext);
-  const [seconds, setSeconds] = useState(5);
+  const [seconds, setSeconds] = useState(10);
   const [redirect, setRedirect] = useState(false);
 
   const api = 'https://api.whatsapp.com/send?';
@@ -40,7 +40,7 @@ function Redirect() {
     if (redirect) {
       const timeout = setTimeout(() => {
         window.location.href = `${url}`;
-      }, 5000);
+      }, 0);
 
       return () => clearTimeout(timeout);
     }
