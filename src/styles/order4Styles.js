@@ -7,16 +7,17 @@ export const Order4Styles = styled.main`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   font-family: 'Tilt Neon', cursive;
   width: 90%;
-  height: 90%;
   padding: 10px;
 
   h1 {
     font-size: x-large;
     text-align: center;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   img {
@@ -39,6 +40,8 @@ export const Order4Styles = styled.main`
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     a {
       border: none;
@@ -99,6 +102,8 @@ export const Order4Styles = styled.main`
   label > div {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   p {
