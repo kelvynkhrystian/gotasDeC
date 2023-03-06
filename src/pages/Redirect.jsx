@@ -8,7 +8,6 @@ function Redirect() {
   const { order } = useContext(OrderContext);
   console.log(order);
   const [seconds, setSeconds] = useState(10);
-  const [redirect, setRedirect] = useState(false);
 
   const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
@@ -31,21 +30,11 @@ function Redirect() {
     }, 1000);
 
     if (seconds === 0) {
-      setRedirect(true);
+      window.location.href = url;
     }
 
     return () => clearInterval(interval);
-  }, [seconds]);
-
-  useEffect(() => {
-    if (redirect) {
-      const timeout = setTimeout(() => {
-        window.open =(`${url}`, '_blank');
-      }, 0);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [redirect, url]);
+  }, [seconds, url]);
 
 
   // setTimeout(function() {
