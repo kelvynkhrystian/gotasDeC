@@ -10,8 +10,8 @@ export const Order4Styles = styled.main`
   justify-content: space-evenly;
   font-family: 'Tilt Neon', cursive;
   width: 90%;
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   padding: 10px;
 
   h1 {
@@ -23,7 +23,7 @@ export const Order4Styles = styled.main`
   img {
     border-radius: 10px;
     margin-bottom: 10px;
-    width: 90px;
+    width: 70px;
   }
 
   article {
