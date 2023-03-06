@@ -107,6 +107,7 @@ export const OrderConfirmStyles = styled.main`
     width: 100%;
 
     a {
+      text-decoration: none;
       border: none;
       border-radius: 5px;
       width: 45%;
