@@ -33,13 +33,26 @@ const flavors = [
 
 function Order4() {
   const [selectedOption, setSelectedOption] = useState(null);
-  const order = useContext(OrderContext);
+  const { order, setOrder} = useContext(OrderContext);
+
+  console.log(order);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
-    order.adicional = option.name
-    order.valor = option.name === 'Nenhum' ? order.valor : order.valor + 5
+    
+    setOrder({
+      ...order,
+      adicional: option.name,
+    });
   };
+
+  const setValue = () => {
+
+    setOrder({
+      ...order,
+      valor: order.adicional === 'Nenhum' ? order.valor : order.valor + 5,
+    });
+  }
 
   return (
     <Order4Styles>
@@ -61,7 +74,7 @@ function Order4() {
         <Link to="/order3">
           <button>Anterior</button>
         </Link>
-        <Link to="/confirm">
+        <Link to="/confirm" onClick={setValue}>
           <button disabled={!selectedOption}>Próximo</button>
         </Link>
       </article>

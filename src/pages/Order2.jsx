@@ -24,11 +24,13 @@ const casca = [
 
 function Order2() {
   const [selectedOption, setSelectedOption] = useState(null);
-  const order = useContext(OrderContext);
+  const { order, setOrder} = useContext(OrderContext);
+
+  console.log(order);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
-    order.casca = option.name
+    setOrder({...order, casca: option.name})
   };
 
   return (

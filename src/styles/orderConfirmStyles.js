@@ -95,13 +95,24 @@ export const OrderConfirmStyles = styled.main`
     }
 
     button {
+      align-items: center;
       background-color: #45322E;
       border: none;
       border-radius: 5px;
       color: #fff;
+      display: flex;
+      justify-content: center;
       font-family: 'Tilt Warp', cursive;
+      font-size: 1.05em;
       height: 40px;
       width: 100%;
+
+      span {
+        background-color: transparent;
+        padding: 0;
+        font-size: 1.2em;
+        margin-left: 10px;
+      }
 
     }
 

@@ -51,6 +51,7 @@ export const Order4Styles = styled.main`
       background-color: transparent;
       color: #45322E;
       font-family: 'Tilt Warp', cursive;
+      font-size: 1.05em;
       padding: 10px;
       width: 100%;
 

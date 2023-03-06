@@ -7,11 +7,15 @@ import OrderContext from '../context/OrderContext';
 function OrderConfirm() {
 
   const {order, setOrder} = useContext(OrderContext);
+
+  console.log(order);
   
   const handleOptionChange = (event) => {
     const n = event.target.value;
-    // order.nome = n
-    setOrder({nome: n})
+    setOrder({
+      ...order,
+      nome: n,
+    })
   };
 
   // const negrito = '*Kelvyn*';
@@ -78,8 +82,8 @@ function OrderConfirm() {
       </article>
 
       <article>
-        <Link to="/order4">
-          <button>Anterior</button>
+        <Link to="/">
+          <button>Refazer <span>&#8634;</span> </button>
         </Link>
 
         <a href={url} target='blank' className='whatsapp'>

@@ -29,11 +29,13 @@ const flavors = [
 
 function Order3() {
   const [selectedOption, setSelectedOption] = useState(null);
-  const order = useContext(OrderContext);
+  const { order, setOrder} = useContext(OrderContext);
+
+  console.log(order);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
-    order.recheio = option.name
+    setOrder({...order, recheio: option.name})
   };
 
   return (
