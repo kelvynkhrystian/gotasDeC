@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import OrderContext from './context/OrderContext';
 
@@ -22,8 +23,11 @@ const defaultOrderValues = {
 };
 
 function App() {
+
+  const [ order, setOrder ] = useState(defaultOrderValues);
+
   return (
-    <OrderContext.Provider value={defaultOrderValues}>
+    <OrderContext.Provider value={{order, setOrder}}>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={ Home } />

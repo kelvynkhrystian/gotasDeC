@@ -6,12 +6,12 @@ import OrderContext from '../context/OrderContext';
 
 function OrderConfirm() {
 
-  const order = useContext(OrderContext);
-
-  const handleOptionChange = (option) => {
-    // console.log(option.target.value);
-    const inputName = option.target.value
-    order.nome = inputName
+  const {order, setOrder} = useContext(OrderContext);
+  
+  const handleOptionChange = (event) => {
+    const n = event.target.value;
+    // order.nome = n
+    setOrder({nome: n})
   };
 
   // const negrito = '*Kelvyn*';
