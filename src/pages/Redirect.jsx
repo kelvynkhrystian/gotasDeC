@@ -23,9 +23,9 @@ function Redirect() {
 
 
 
-  // setTimeout(function() {
-  //   window.location.href = `${url}`;
-  // }, 5000);
+  setTimeout(function() {
+    window.location.href = `${url}`;
+  }, 5000);
 
   return (
     <RedirectStyles>
