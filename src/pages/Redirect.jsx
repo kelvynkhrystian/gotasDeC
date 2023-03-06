@@ -40,7 +40,7 @@ function Redirect() {
   useEffect(() => {
     if (redirect) {
       const timeout = setTimeout(() => {
-        window.location.href = `${url}`;
+        window.location = `${url}`;
       }, 0);
 
       return () => clearTimeout(timeout);
