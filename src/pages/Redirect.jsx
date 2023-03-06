@@ -45,7 +45,7 @@ function Redirect() {
     <RedirectStyles>
       <img src="https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/logoG.png?raw=true" alt="logomarca gotas de chocolate" />
       <h2>Obrigado pela preferência!</h2>
-      <h3>Lembrando que para sua encomenda seja preparada, pedimos 50% do valor do seu pedido antecipadamente</h3>
+      <h3>Lembrando que para sua encomenda seja preparada, pedimos 50% do valor do seu pedido antecipadamente!</h3>
       <span>{seconds}</span>
       <p>Agora você será redirecionado para o whatsapp</p>
       
