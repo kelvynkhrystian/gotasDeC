@@ -7,9 +7,9 @@ export const OrderConfirmStyles = styled.main`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: 'Tilt Neon', cursive;
-  height: 80%;
+  height: 90%;
   width: 90%;
   padding: 10px;
 
@@ -19,10 +19,26 @@ export const OrderConfirmStyles = styled.main`
   }
 
   input {
+    border: #45322E solid 3px;
+    color: #fff;
+    border-radius: 5px;
     font-size: large;
-    padding: 10px 5px;
+    padding: 0 10px;
     height: 40px;
-    width: 95%;
+    width: 90%;
+  }
+
+  select {
+    border: #45322E solid 3px;
+    background-color: #fff;
+    color: #45322E;
+    border-radius: 5px;
+    font-size: large;
+    padding: 0 5px;
+    height: 40px;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   span {
@@ -34,8 +50,8 @@ export const OrderConfirmStyles = styled.main`
 
   section {
     
+    margin-bottom: 20px;
     width: 90%;
-    margin-bottom: 25px;
 
     h1 {
       align-items: center;

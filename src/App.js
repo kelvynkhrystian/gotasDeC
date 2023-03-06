@@ -13,11 +13,11 @@ import OrderConfirm from './pages/OrderConfirm'
 import GlobalStyle from './styles/globalStyles';
 
 const defaultOrderValues = { 
-  tamanho: '150g',
-  casca: 'Ao Leite',
-  recheio: 'Brigadeiro',
-  adicional: 'Nenhum',
-  nome: 'Kelvyn',
+  tamanho: '',
+  casca: '',
+  recheio: '',
+  adicional: '',
+  nome: '',
   pagamento: 'Pix',
   valor: 0,
 };

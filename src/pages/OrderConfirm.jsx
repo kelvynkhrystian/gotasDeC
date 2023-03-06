@@ -18,6 +18,16 @@ function OrderConfirm() {
     })
   };
 
+  const handleSelectChange = (event) => {
+    const s = event.target.value;
+
+    console.log(s);
+    setOrder({
+      ...order,
+      pagamento: s,
+    })
+  };
+
   // const negrito = '*Kelvyn*';
   // const italico = '_Kelvyn_';
   // const taxado = '*~texto~';
@@ -76,9 +86,16 @@ function OrderConfirm() {
         </section>
 
         
-        <h3>Antes de efetuar o pedido, diga seu nome para que possamos lhe atender melhor</h3>
+        <h3>Antes de efetuar o pedido, diga seu nome e a forma de pagamento para que possamos lhe atender melhor!</h3>
 
         <input type="text" placeholder='digite seu nome' onChange={handleOptionChange}/>
+
+        <select onChange={handleSelectChange}>
+          <option value="Pix">Pix</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Débito">Débito</option>
+          <option value="Crédito">Crédito</option>
+        </select>
       </article>
 
       <article>
