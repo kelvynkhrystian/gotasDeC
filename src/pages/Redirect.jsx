@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import OrderContext from '../context/OrderContext';
 
 import { RedirectStyles } from '../styles/redirectStyles';
@@ -6,6 +6,7 @@ import { RedirectStyles } from '../styles/redirectStyles';
 function Redirect() {
 
   const { order } = useContext(OrderContext);
+  const [seconds, setSeconds] = useState(5);
 
   const api = 'https://api.whatsapp.com/send?';
   const fone = '5598991054292';
@@ -21,18 +22,25 @@ function Redirect() {
   const message = `${title}${name}${size}${shell}${filling}${additional}${payment}${value}`
   const url = `${api}phone=${fone}&text=${message}`;
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((prevSeconds) => prevSeconds - 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
 
-  setTimeout(function() {
-    window.location.href = `${url}`;
-  }, 5000);
+  // setTimeout(function() {
+  //   window.location.href = `${url}`;
+  // }, 5000);
 
   return (
     <RedirectStyles>
       <img src="https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/logoG.png?raw=true" alt="logomarca gotas de chocolate" />
       <h2>Obrigado pela preferência!</h2>
       <h3>Lembrando que para sua encomenda seja preparada, pedimos 50% do valor do seu pedido antecipadamente</h3>
-      <span>5</span>
+      <span>{seconds}</span>
       <p>Agora você será redirecionado para o whatsapp</p>
       
     </RedirectStyles>
