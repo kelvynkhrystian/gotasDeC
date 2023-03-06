@@ -12,10 +12,22 @@ const flavors = [
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/x.png?raw=true',
   },
   {
+    id: 'mm',
+    name: ' M&M ',
+    price: 5,
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/m&m.png?raw=true',
+  },
+  {
     id: 'morango',
     name: 'Morango',
     price: 5,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalMorango.png?raw=true',
+  },
+  {
+    id: 'choco',
+    name: 'Chocoball',
+    price: 5,
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/chocoball.png?raw=true',
   },
   {
     id: 'kitkat',

@@ -9,8 +9,9 @@ export const Order4Styles = styled.main`
   flex-direction: column;
   justify-content: space-evenly;
   font-family: 'Tilt Neon', cursive;
-  height: 80%;
   width: 90%;
+  margin-top: 150px;
+  margin-bottom: 50px;
   padding: 10px;
 
   h1 {
@@ -31,6 +32,8 @@ export const Order4Styles = styled.main`
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   article:nth-child(3) {
