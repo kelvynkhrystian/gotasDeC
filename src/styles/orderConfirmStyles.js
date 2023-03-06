@@ -44,7 +44,7 @@ export const OrderConfirmStyles = styled.main`
 
   span {
     color: #fff;
-    background-color: #077515;
+    background-color: #E64756;
     border-radius: 5px;
     padding: 5px 10px;
   }
@@ -199,7 +199,7 @@ export const OrderConfirmStyles = styled.main`
   }
 
   div > p:nth-child(2) {
-    background-color: #077515;
+    background-color: #E64756;
   }
 
   @media (max-width:600px) {
