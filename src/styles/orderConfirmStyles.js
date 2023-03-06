@@ -20,9 +20,10 @@ export const OrderConfirmStyles = styled.main`
 
   input {
     border: #45322E solid 3px;
-    color: #fff;
+    color: #45322E;
     border-radius: 5px;
     font-size: large;
+    font-weight: bold;
     padding: 0 10px;
     height: 40px;
     width: 90%;
@@ -34,6 +35,7 @@ export const OrderConfirmStyles = styled.main`
     color: #45322E;
     border-radius: 5px;
     font-size: large;
+    font-weight: bold;
     padding: 0 5px;
     height: 40px;
     width: 90%;

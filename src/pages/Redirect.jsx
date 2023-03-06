@@ -1,0 +1,33 @@
+import React, { useContext } from 'react';
+import OrderContext from '../context/OrderContext';
+
+function Redirect() {
+
+  const { order } = useContext(OrderContext);
+
+  const api = 'https://api.whatsapp.com/send?';
+  const fone = '5598991054292';
+  const title = '*Gotas de Chocolate*%0a%0a';
+  const name = `*Nome*: _${order.nome}_%0a`;
+  const size = `*Tamanho*: _${order.tamanho}_%0a`;
+  const shell = `*Casca*: _${order.casca}_%0a`;
+  const filling = `*Recheio*: _${order.recheio}_%0a`;
+  const additional = `*Adicional*: _${order.adicional}_%0a`;
+  const payment = `*Forma de pagamento*: _${order.pagamento}_%0a%0a`;
+  const value = `*Total*: R$ _${order.valor}_,00`;
+  
+  const message = `${title}${name}${size}${shell}${filling}${additional}${payment}${value}`
+  const url = `${api}phone=${fone}&text=${message}`;
+
+
+
+  setTimeout(function() {
+    window.location.href = `${url}`;
+  }, 5000);
+
+  return (
+    <div>Redirect testando</div>
+  )
+}
+
+export default Redirect

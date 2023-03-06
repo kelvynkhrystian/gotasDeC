@@ -106,6 +106,10 @@ function OrderConfirm() {
         <a href={url} target='blank' className='whatsapp'>
           <button>Enviar<img src="https://raw.githubusercontent.com/kelvynkhrystian/gotasdechocolate/main/src/images/WhatsApp.svg.webp" alt="logo whatsapp" /> </button>
         </a>
+
+        <Link to="/redirect">
+          aaaaaaa
+        </Link>
       </article>
     </OrderConfirmStyles>
   );
