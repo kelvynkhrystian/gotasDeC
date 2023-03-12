@@ -8,13 +8,13 @@ const sizes = [
   {
     id: '150g',
     name: '150g',
-    price: 25,
+    price: 45,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca250g.png?raw=true',
   },
   {
     id: '250g',
     name: '250g',
-    price: 35,
+    price: 55,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/casca350g.png?raw=true',
   },
 ];
