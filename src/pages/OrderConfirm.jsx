@@ -31,7 +31,7 @@ function OrderConfirm() {
 
     if (order.adicional === 'Nenhum') return 0
     if (order.adicional === 'Chocoball') return 4;
-    if (order.adicional === ' M&M ') return 5;
+    if (order.adicional === 'M&M') return 5;
     if (order.adicional === 'Morango') return 5;
     if (order.adicional === 'Kitkat') return 6;
     if (order.adicional === 'Ferreiro R.') return 8
