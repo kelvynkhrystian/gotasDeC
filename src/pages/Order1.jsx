@@ -29,7 +29,7 @@ function Order1() {
     setOrder({
       ...order,
       tamanho: option.name,
-      valor: option.name === '150g' ? 25 : 35
+      valor: option.name === '150g' ? 45 : 55
     });
   };
 

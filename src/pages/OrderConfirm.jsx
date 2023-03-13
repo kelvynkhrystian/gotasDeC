@@ -27,6 +27,16 @@ function OrderConfirm() {
     })
   };
 
+  const aditionalValue = () => {
+
+    if (order.adicional === 'Nenhum') return 0
+    if (order.adicional === 'Chocoball') return 4;
+    if (order.adicional === ' M&M ') return 5;
+    if (order.adicional === 'Morango') return 5;
+    if (order.adicional === 'Kitkat') return 6;
+    if (order.adicional === 'Ferreiro R.') return 8
+  }
+
   return (
     <OrderConfirmStyles>
       <h1>5º Passo - E último, vamos confirmar seu pedido!</h1>
@@ -36,7 +46,7 @@ function OrderConfirm() {
             <h2>Tamanho</h2>
             <div>
               <p>{`${order.tamanho}`}</p>
-              <p>{`${order.tamanho=== '150g' ? 'R$ 25' : 'R$ 35'}`}</p>
+              <p>{`${order.tamanho=== '150g' ? 'R$ 45' : 'R$ 55'}`}</p>
             </div>
           </div>
           <div>
@@ -55,7 +65,7 @@ function OrderConfirm() {
             <h2>Adicionais</h2>
             <div>
               <p>{`${order.adicional}`}</p>
-              <p>{`${order.adicional=== 'Nenhum' ? 'R$ 0' : 'R$ 5'}`}</p>
+              <p>{`R$ ${aditionalValue()}`}</p>
             </div>
           </div>
           <div>

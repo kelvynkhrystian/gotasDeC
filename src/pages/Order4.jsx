@@ -59,9 +59,17 @@ function Order4() {
 
   const setValue = () => {
 
+    let add = 0;
+    if (order.adicional === 'Nenhum') add = order.valor;
+    if (order.adicional === 'Chocoball') add = order.valor + 4;
+    if (order.adicional === ' M&M ') add = order.valor + 5;
+    if (order.adicional === 'Morango') add = order.valor + 5;
+    if (order.adicional === 'Kitkat') add = order.valor + 6;
+    if (order.adicional === 'Ferreiro R.') add = order.valor + 8
+
     setOrder({
       ...order,
-      valor: order.adicional === 'Nenhum' ? order.valor : order.valor + 5,
+      valor: add
     });
   }
 
