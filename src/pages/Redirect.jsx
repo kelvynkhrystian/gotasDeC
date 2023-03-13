@@ -7,8 +7,10 @@ function Redirect() {
   const { order } = useContext(OrderContext);
   const [seconds, setSeconds] = useState(10);
 
+  // if (order.adicional === 'M&M') order.adicional = 'M mp M'
+
   const fone = '5598991054292';
-  const message = `*Gotas de Chocolate*%0a%0a*Nome*: _${order.nome}_%0a*Tamanho*: _${order.tamanho}_%0a*Casca*: _${order.casca}_%0a*Recheio*: _${order.recheio}_%0a*Adicional*: _${order.adicional}_%0a*Forma de pagamento*: _${order.pagamento}_%0a%0a*Total*: _R$ ${order.valor},00_`;
+  const message = `*Gotas de Chocolate*%0a%0a*Nome*: _${order.nome}_%0a*Tamanho*: _${order.tamanho}_%0a*Casca*: _${order.casca}_%0a*Recheio*: _${order.recheio}_%0a*Adicional*: ${order.adicional} %0a*Forma de pagamento*: _${order.pagamento}_%0a%0a*Total*: _R$ ${order.valor},00_`;
 
   useEffect(() => {
     const interval = setInterval(() => {
