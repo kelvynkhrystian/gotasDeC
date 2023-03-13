@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import OrderContext from './context/OrderContext';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
@@ -30,19 +31,31 @@ function App() {
   return (
     <OrderContext.Provider value={{order, setOrder}}>
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/order1" component={ Order1 } />
-          <Route exact path="/order2" component={ Order2 } />
-          <Route exact path="/order3" component={ Order3 } />
-          <Route exact path="/order4" component={ Order4 } />
-          <Route path="/confirm" component={ OrderConfirm } />
-          <Route path="/redirect" component={ Agradecimentos } />
-          <Route path="*" component={ NotFound } />
-        </Switch>
+        <Route
+          render={({ location }) => (
+            <TransitionGroup className='transitionBox'>
+              <CSSTransition
+                key={location.key}
+                timeout={500}
+                classNames="fade"
+              >
+                <Switch location={location}>
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/order1" component={Order1} />
+                  <Route exact path="/order2" component={Order2} />
+                  <Route exact path="/order3" component={Order3} />
+                  <Route exact path="/order4" component={Order4} />
+                  <Route path="/confirm" component={OrderConfirm} />
+                  <Route path="/redirect" component={Agradecimentos} />
+                  <Route path="*" component={NotFound} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
       </BrowserRouter>
-    <GlobalStyle />
-  </OrderContext.Provider>
+      <GlobalStyle />
+    </OrderContext.Provider>
   );
 }
 
