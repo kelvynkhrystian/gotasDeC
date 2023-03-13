@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { OrderConfirmStyles } from '../styles/orderConfirmStyles';
 
@@ -6,6 +6,7 @@ import OrderContext from '../context/OrderContext';
 
 function OrderConfirm() {
 
+  const [confirmWhats, setconfirmWhats] = useState(null);
   const {order, setOrder} = useContext(OrderContext);
   
   const handleOptionChange = (event) => {
@@ -14,6 +15,7 @@ function OrderConfirm() {
       ...order,
       nome: n,
     })
+    setconfirmWhats(n)
   };
 
   const handleSelectChange = (event) => {
@@ -80,7 +82,7 @@ function OrderConfirm() {
         </Link>
 
         <Link to="/redirect" className='whatsapp'>
-          <button>Enviar<img src="https://raw.githubusercontent.com/kelvynkhrystian/gotasdechocolate/main/src/images/WhatsApp.svg.webp" alt="logo whatsapp" /> </button>
+          <button disabled={!confirmWhats} >Enviar<img src="https://raw.githubusercontent.com/kelvynkhrystian/gotasdechocolate/main/src/images/WhatsApp.svg.webp" alt="logo whatsapp" /> </button>
         </Link>
       </article>
     </OrderConfirmStyles>

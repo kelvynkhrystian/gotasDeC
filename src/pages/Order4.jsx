@@ -12,6 +12,12 @@ const flavors = [
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/x.png?raw=true',
   },
   {
+    id: 'choco',
+    name: 'Chocoball',
+    price: 4,
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/chocoball.png?raw=true',
+  },
+  {
     id: 'mm',
     name: ' M&M ',
     price: 5,
@@ -23,22 +29,17 @@ const flavors = [
     price: 5,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalMorango.png?raw=true',
   },
-  {
-    id: 'choco',
-    name: 'Chocoball',
-    price: 5,
-    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/chocoball.png?raw=true',
-  },
+  
   {
     id: 'kitkat',
     name: 'Kitkat',
-    price: 5,
+    price: 6,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalKitkat.png?raw=true',
   },
   {
     id: 'ferreiro',
     name: 'Ferreiro R.',
-    price: 5,
+    price: 8,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalFerreiro.png?raw=true',
   },
 ];

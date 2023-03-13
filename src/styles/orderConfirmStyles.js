@@ -157,7 +157,7 @@ export const OrderConfirmStyles = styled.main`
 
 
     button:disabled {
-      opacity: 10%;
+      opacity: 40%;
     }
 
     button:active {
