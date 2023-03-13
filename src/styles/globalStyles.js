@@ -53,6 +53,12 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
   }
 
+  button.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
 
   @media (min-width:600px) {
     body {
