@@ -203,9 +203,7 @@ export const OrderConfirmStyles = styled.main`
     background-color: #E64756;
   }
 
-  @media (max-width:600px) {
-    body {
-      
-    };
+  @media (min-width:600px) {
+    width: 50%;
   }
 `;

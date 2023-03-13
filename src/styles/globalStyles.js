@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
-  @media (max-width:600px) {
+  @media (min-width:600px) {
     body {
       /* background-color: blue; */
     };

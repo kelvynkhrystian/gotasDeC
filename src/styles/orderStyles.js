@@ -116,9 +116,8 @@ export const OrderStyles = styled.main`
 
 
 
-  @media (max-width:600px) {
-    body {
-      /* background-color: blue; */
-    };
+  @media (min-width:600px) {
+
+    width: 40%;
   }
 `;
