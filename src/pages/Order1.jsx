@@ -25,6 +25,7 @@ function Order1() {
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    // console.log(option);
 
     setOrder({
       ...order,
