@@ -34,8 +34,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .fade-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in-out;
+    display: none;
   }
 
   .fade-exit {
