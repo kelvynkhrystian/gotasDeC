@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
 
   .fade-exit-active {
     opacity: 0;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease;
   }
 
   .transitionBox {
