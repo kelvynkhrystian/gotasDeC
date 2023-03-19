@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import OrderContext from './context/OrderContext';
@@ -45,9 +46,9 @@ function App() {
                   <Route exact path="/order2" component={Order2} />
                   <Route exact path="/order3" component={Order3} />
                   <Route exact path="/order4" component={Order4} />
-                  <Route path="/confirm" component={OrderConfirm} />
-                  <Route path="/redirect" component={Agradecimentos} />
-                  <Route path="*" component={NotFound} />
+                  <Route exact path="/confirm" component={OrderConfirm} />
+                  <Route exact path="/redirect" component={Agradecimentos} />
+                  <Route exact path="*" component={NotFound} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
