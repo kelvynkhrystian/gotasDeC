@@ -38,7 +38,7 @@ function Order3() {
 
   return (
     <Order3Styles>
-      <h1>3º Passo - A decição principal, escolha seu recheio preferido!</h1>
+      <h1>3º Passo - O principal, escolha seu recheio preferido!</h1>
       <article>
         {flavors.map((option) => (
           <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>
