@@ -78,7 +78,7 @@ function Order4() {
       ...order,
       valor: add,
       adicional: selectedOptions.map((option) => option.name).join(', '),
-      valorAdicional: selectedOptions[0].price + selectedOptions[1].price,
+      valorAdicional: selectedOptions.reduce((total, option) => total + option.price, 0),
     });
   };
   

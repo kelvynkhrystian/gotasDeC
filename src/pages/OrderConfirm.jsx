@@ -8,8 +8,6 @@ function OrderConfirm() {
 
   const [confirmWhats, setconfirmWhats] = useState(null);
   const {order, setOrder} = useContext(OrderContext);
-
-  console.log(order.adicional);
   
   const handleOptionChange = (event) => {
     const n = event.target.value;
