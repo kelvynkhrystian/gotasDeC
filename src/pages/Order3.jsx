@@ -7,22 +7,22 @@ import OrderContext from '../context/OrderContext';
 const flavors = [
   {
     id: 'brigadero',
-    name: 'Brigadero',
+    name: ' Brigadero ',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/brigadeiro.png?raw=true',
   },
   {
     id: 'ferreiro',
-    name: 'Ferrero R.',
+    name: ' Ferrero R. ',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ferrero.png?raw=true',
   },
   {
     id: 'ninho',
-    name: 'Ninho c/Nut',
+    name: ' Ninho c/Nut ',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ninho.png?raw=true',
   },
   {
     id: 'mouse',
-    name: 'Mousse de M.',
+    name: ' Mousse de M. ',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/maracuja.png?raw=true',
   },
 ];
@@ -35,11 +35,18 @@ function Order3() {
     // Verifica se a opção já foi selecionada e remove se já estiver no array
     if (selectedOptions.some((selectedOption) => selectedOption.id === option.id)) {
       setSelectedOptions(selectedOptions.filter((selectedOption) => selectedOption.id !== option.id));
-      setOrder({ ...order, recheio: selectedOptions.filter((selectedOption) => selectedOption.id !== option.id).map((selectedOption) => selectedOption.name) });
-    } else if (selectedOptions.length < 2) { // Adiciona a opção se ainda não foi selecionada e não há mais de 2 opções selecionadas
+      setOrder({
+        ...order,
+        recheio: selectedOptions.filter((selectedOption) => selectedOption.id !== option.id).map((selectedOption) => selectedOption.name) });
+    } else if (selectedOptions.length < 2) {
+      // Adiciona a opção se ainda não foi selecionada e não há mais de 2 opções selecionadas
       setSelectedOptions([...selectedOptions, option]);
-      setOrder({ ...order, recheio: [...selectedOptions, option].map((selectedOption) => selectedOption.name) });
+      setOrder({
+        ...order,
+        recheio: [...selectedOptions, option].map((selectedOption) => selectedOption.name) });
     }
+
+    console.log(order.recheio);
   };
 
   return (
