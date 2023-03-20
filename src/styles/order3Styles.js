@@ -17,7 +17,7 @@ export const Order3Styles = styled.main`
   flex-direction: column;
   justify-content: space-evenly;
   font-family: 'Tilt Neon', cursive;
-  height: 90%;
+  height: 85%;
   width: 90%;
   padding: 10px;
 
