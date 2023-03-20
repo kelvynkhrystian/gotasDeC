@@ -7,22 +7,22 @@ import OrderContext from '../context/OrderContext';
 const flavors = [
   {
     id: 'brigadero',
-    name: ' Brigadero ',
+    name: 'Brigadero',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/brigadeiro.png?raw=true',
   },
   {
     id: 'ferreiro',
-    name: ' Ferrero R. ',
+    name: 'Ferrero R.',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ferrero.png?raw=true',
   },
   {
     id: 'ninho',
-    name: ' Ninho c/Nut ',
+    name: 'Ninho c/Nut',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/ninho.png?raw=true',
   },
   {
     id: 'mouse',
-    name: ' Mousse de M. ',
+    name: 'Mousse de M.',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/maracuja.png?raw=true',
   },
 ];
