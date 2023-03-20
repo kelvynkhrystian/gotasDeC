@@ -54,7 +54,6 @@ function Order4() {
       setSelectedOptions(selectedOptions.filter((o) => o !== option));
       // seleciona +1 opção se ja não estiverem duas selecionadas
     } else if (selectedOptions.length < 2) {
-      if (selectedOptions[0].name === 'Nenhum')
       setSelectedOptions([...selectedOptions, option]);
     }
   };
