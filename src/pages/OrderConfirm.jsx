@@ -48,11 +48,11 @@ function OrderConfirm() {
           <div>
             <h2>Recheio</h2>
             <div>
-              <p>{`${order.recheio}`}</p>
+              <p>{`${order.recheio[0]}, ${order.recheio[1]}`}</p>
             </div>
           </div>
           <div>
-            <h2>Adicionais</h2>
+            <h2>Add</h2>
             <div>
               <p>{`${order.adicional}`}</p>
               <p>{`R$ ${order.valorAdicional}`}</p>
