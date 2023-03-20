@@ -8,7 +8,6 @@ function OrderConfirm() {
 
   const [confirmWhats, setconfirmWhats] = useState(null);
   const {order, setOrder} = useContext(OrderContext);
-  console.log(order.recheio);
   
   const handleOptionChange = (event) => {
     const n = event.target.value;
