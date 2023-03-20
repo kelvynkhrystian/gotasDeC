@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const Order3Styles = styled.main`
 
+/* HIDE RADIO */
+  [type=checkbox] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
   align-items: center;
   background-color: white;
   border-radius: 10px;
@@ -73,14 +81,6 @@ export const Order3Styles = styled.main`
     button:active {
       transform: scale(0.9);
     }
-  }
-
-  /* HIDE RADIO */
-  [type=radio] { 
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
   }
 
   label {

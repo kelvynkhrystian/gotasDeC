@@ -4,7 +4,7 @@ import { Order4Styles } from '../styles/order4Styles';
 
 import OrderContext from '../context/OrderContext';
 
-const flavors = [
+const additional = [
   {
     id: 'no',
     name: 'Nenhum',
@@ -77,7 +77,7 @@ function Order4() {
     <Order4Styles>
       <h1>4º Passo - Agora é a hora em que você decide se gostaria de algum adicional...</h1>
       <article>
-        {flavors.map((option) => (
+        {additional.map((option) => (
           <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>
             <input type="radio" id={option.id} value={option.id} checked={selectedOption === option} onChange={() => handleOptionClick(option)} />
             <img src={option.image} alt={`Option ${option.name}`} />
