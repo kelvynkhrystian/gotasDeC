@@ -58,6 +58,7 @@ function Order4() {
   
 
   const setValue = () => {
+    
     let add = 0;
     if (selectedOptions.length === 0) {
       add = order.valor;
@@ -66,10 +67,12 @@ function Order4() {
     } else if (selectedOptions.length === 2) {
       add = order.valor + selectedOptions[0].price + selectedOptions[1].price;
     }
+    
     setOrder({
       ...order,
       valor: add,
       adicional: selectedOptions.map((option) => option.name).join(', '),
+      valorAdicional: add,
     });
   };
   

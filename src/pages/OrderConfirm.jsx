@@ -27,16 +27,6 @@ function OrderConfirm() {
     })
   };
 
-  const aditionalValue = () => {
-
-    if (order.adicional === 'Nenhum') return 0
-    if (order.adicional === 'Chocoball') return 4;
-    if (order.adicional === 'M&M') return 5;
-    if (order.adicional === 'Morango') return 5;
-    if (order.adicional === 'Kitkat') return 6;
-    if (order.adicional === 'Ferreiro R.') return 8
-  }
-
   return (
     <OrderConfirmStyles>
       <h1>5º Passo - E último, vamos confirmar seu pedido!</h1>
@@ -65,7 +55,7 @@ function OrderConfirm() {
             <h2>Adicionais</h2>
             <div>
               <p>{`${order.adicional}`}</p>
-              <p>{`R$ ${aditionalValue()}`}</p>
+              <p>{`R$ ${order.valorAdicional}`}</p>
             </div>
           </div>
           <div>
