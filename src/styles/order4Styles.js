@@ -17,7 +17,6 @@ export const Order4Styles = styled.main`
     text-align: center;
     width: 100%;
     margin-top: 15px;
-    margin-bottom: 15px;
   }
 
   img {
@@ -41,7 +40,7 @@ export const Order4Styles = styled.main`
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
 
     a {
       border: none;
@@ -93,6 +92,7 @@ export const Order4Styles = styled.main`
     padding: 10px 5px;
     font-weight: bolder;
     width: 150px;
+    margin-bottom: 15px;
   }
 
   label.selected {

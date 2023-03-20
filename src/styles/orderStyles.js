@@ -9,7 +9,7 @@ export const OrderStyles = styled.main`
   flex-direction: column;
   justify-content: space-evenly;
   font-family: 'Tilt Neon', cursive;
-  height: 50%;
+  height: 60%;
   width: 90%;
   padding: 10px;
 

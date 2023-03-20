@@ -17,7 +17,7 @@ export const Order3Styles = styled.main`
   flex-direction: column;
   justify-content: space-evenly;
   font-family: 'Tilt Neon', cursive;
-  height: 80%;
+  height: 90%;
   width: 90%;
   padding: 10px;
 
@@ -89,6 +89,7 @@ export const Order3Styles = styled.main`
     flex-direction: column;
     padding: 10px 15px;
     font-weight: bolder;
+    margin-bottom: 10px;
   }
 
   label.selected {
