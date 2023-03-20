@@ -18,7 +18,7 @@ import GlobalStyle from './styles/globalStyles';
 const defaultOrderValues = { 
   tamanho: '',
   casca: '',
-  recheio: '',
+  recheio: [],
   adicional: [],
   valorAdicional: 0,
   nome: '',
