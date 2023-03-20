@@ -80,7 +80,7 @@ function Order4() {
 
   return (
     <Order4Styles>
-      <h1>4º Passo - Agora é a hora em que você decide se gostaria de algum adicional...</h1>
+      <h1>4º Passo - Quer algum adicional? (até 2 opções)!</h1>
       <article>
         {additional.map((option) => (
           <label
