@@ -60,11 +60,14 @@ function Order4() {
     } else {
       setSelectedOptions((prevOptions) => [...prevOptions.slice(1), option]);
     }
+
+    console.log(selectedOptions);
   };
 
   const setValue = () => {
     
     let add = 0;
+    console.log(selectedOptions);
     if (selectedOptions.length === 0) {
       add = order.valor;
     } else if (selectedOptions.length === 1) {
@@ -77,7 +80,7 @@ function Order4() {
       ...order,
       valor: add,
       adicional: selectedOptions.map((option) => option.name).join(', '),
-      valorAdicional: add,
+      valorAdicional: selectedOptions[0].price + selectedOptions[1].price,
     });
   };
   
