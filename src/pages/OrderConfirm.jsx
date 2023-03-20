@@ -8,6 +8,7 @@ function OrderConfirm() {
 
   const [confirmWhats, setconfirmWhats] = useState(null);
   const {order, setOrder} = useContext(OrderContext);
+  console.log(order.recheio);
   
   const handleOptionChange = (event) => {
     const n = event.target.value;
@@ -48,7 +49,7 @@ function OrderConfirm() {
           <div>
             <h2>Recheio</h2>
             <div>
-              <p>{`${order.recheio[0]}, ${order.recheio[1]}`}</p>
+              <p>{`${order.recheio}`}</p>
             </div>
           </div>
           <div>
