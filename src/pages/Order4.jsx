@@ -113,8 +113,8 @@ function Order4() {
         <Link to="/order3">
           <button>Anterior</button>
         </Link>
-        <Link to="/confirm" onClick={setValue}>
-          <button disabled={selectedOptions.length === 0}>Próximo</button>
+        <Link to="/confirm">
+          <button disabled={selectedOptions.length === 0} onClick={setValue}>Próximo</button>
         </Link>
       </article>
     </Order4Styles>
