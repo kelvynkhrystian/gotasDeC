@@ -8,10 +8,6 @@ function OrderConfirm() {
 
   const [confirmWhats, setconfirmWhats] = useState(null);
   const {order, setOrder} = useContext(OrderContext);
-
-  if (order.adicional[0] === 'Nenhum') order.adicional[0] = '';
-  if (order.adicional[1] === 'Nenhum') order.adicional[1] = '';
-
   
   const handleOptionChange = (event) => {
     const n = event.target.value;

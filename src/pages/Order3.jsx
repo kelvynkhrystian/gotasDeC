@@ -22,7 +22,7 @@ const flavors = [
   },
   {
     id: 'mouse',
-    name: 'Maracujá',
+    name: 'Mousse de M.',
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/maracuja.png?raw=true',
   },
 ];
