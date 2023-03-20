@@ -27,6 +27,8 @@ function OrderConfirm() {
     })
   };
 
+  const inicio = () => window.location.href = 'https://gotasdechocolate.vercel.app/'
+
   return (
     <OrderConfirmStyles>
       <h1>5º Passo - E último, vamos confirmar seu pedido!</h1>
@@ -77,7 +79,7 @@ function OrderConfirm() {
       </article>
 
       <article>
-        <Link to="/">
+        <Link onClick={inicio}>
           <button>Refazer <span>&#8634;</span> </button>
         </Link>
 
