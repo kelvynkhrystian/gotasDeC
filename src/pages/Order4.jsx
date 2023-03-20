@@ -49,12 +49,16 @@ function Order4() {
   const { order, setOrder} = useContext(OrderContext);
 
   const handleOptionClick = (option) => {
-    // verifica se tem repetida
-    if (selectedOptions.includes(option)) {
+    if (option.id === 'no') {
+      setSelectedOptions([option]);
+    } else if (selectedOptions[0]?.id === 'no') {
+      setSelectedOptions([option]);
+    } else if (selectedOptions.includes(option)) {
       setSelectedOptions(selectedOptions.filter((o) => o !== option));
-      // seleciona +1 opção se ja não estiverem duas selecionadas
     } else if (selectedOptions.length < 2) {
       setSelectedOptions([...selectedOptions, option]);
+    } else {
+      setSelectedOptions((prevOptions) => [...prevOptions.slice(1), option]);
     }
   };
 
