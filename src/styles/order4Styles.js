@@ -78,8 +78,8 @@ export const Order4Styles = styled.main`
     }
   }
 
-  /* HIDE RADIO */
-  [type=radio] { 
+  /* HIDE CHECKBOX */
+  [type=checkbox] { 
     position: absolute;
     opacity: 0;
     width: 0;

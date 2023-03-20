@@ -45,41 +45,52 @@ const additional = [
 ];
 
 function Order4() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOptions, setSelectedOptions] = useState([]);
   const { order, setOrder} = useContext(OrderContext);
 
   const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    
-    setOrder({
-      ...order,
-      adicional: option.name,
-    });
+    if (selectedOptions.includes(option)) {
+      setSelectedOptions(selectedOptions.filter((o) => o !== option));
+    } else if (selectedOptions.length < 2) {
+      setSelectedOptions([...selectedOptions, option]);
+    }
   };
+  
 
   const setValue = () => {
-
     let add = 0;
-    if (order.adicional === 'Nenhum') add = order.valor;
-    if (order.adicional === 'Chocoball') add = order.valor + 4;
-    if (order.adicional === 'M&M') add = order.valor + 5;
-    if (order.adicional === 'Morango') add = order.valor + 5;
-    if (order.adicional === 'Kitkat') add = order.valor + 6;
-    if (order.adicional === 'Ferreiro R.') add = order.valor + 8
-
+    if (selectedOptions.length === 0) {
+      add = order.valor;
+    } else if (selectedOptions.length === 1) {
+      add = order.valor + selectedOptions[0].price;
+    } else if (selectedOptions.length === 2) {
+      add = order.valor + selectedOptions[0].price + selectedOptions[1].price;
+    }
     setOrder({
       ...order,
-      valor: add
+      valor: add,
+      adicional: selectedOptions.map((option) => option.name).join(', '),
     });
-  }
+  };
+  
 
   return (
     <Order4Styles>
       <h1>4º Passo - Agora é a hora em que você decide se gostaria de algum adicional...</h1>
       <article>
         {additional.map((option) => (
-          <label key={option.id} htmlFor={option.id} className={selectedOption === option ? 'selected' : ''}>
-            <input type="radio" id={option.id} value={option.id} checked={selectedOption === option} onChange={() => handleOptionClick(option)} />
+          <label
+            key={option.id}
+            htmlFor={option.id}
+            className={selectedOptions.includes(option) ? 'selected' : ''}
+          >
+            <input
+              type="checkbox"
+              id={option.id}
+              value={option.id}
+              checked={selectedOptions.includes(option)}
+              onChange={() => handleOptionClick(option)}
+            />
             <img src={option.image} alt={`Option ${option.name}`} />
             <div>
               <p>{option.name}</p>
@@ -94,7 +105,7 @@ function Order4() {
           <button>Anterior</button>
         </Link>
         <Link to="/confirm" onClick={setValue}>
-          <button disabled={!selectedOption}>Próximo</button>
+          <button disabled={selectedOptions.length === 0}>Próximo</button>
         </Link>
       </article>
     </Order4Styles>
