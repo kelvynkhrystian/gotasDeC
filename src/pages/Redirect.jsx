@@ -5,7 +5,7 @@ import { RedirectStyles } from '../styles/redirectStyles';
 
 function Redirect() {
   const { order } = useContext(OrderContext);
-  const [seconds, setSeconds] = useState(10);
+  const [seconds, setSeconds] = useState(2);
 
   if (order.adicional === 'M&M') order.adicional = 'MM'
   console.log(order);
