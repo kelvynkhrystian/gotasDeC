@@ -45,8 +45,6 @@ function Order3() {
         ...order,
         recheio: [...selectedOptions, option].map((selectedOption) => selectedOption.name) });
     }
-
-    console.log(order.recheio);
   };
 
   return (

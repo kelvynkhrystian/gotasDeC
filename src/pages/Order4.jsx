@@ -60,8 +60,6 @@ function Order4() {
     } else {
       setSelectedOptions((prevOptions) => [...prevOptions.slice(1), option]);
     }
-
-    console.log(selectedOptions);
   };
 
   const setValue = () => {
