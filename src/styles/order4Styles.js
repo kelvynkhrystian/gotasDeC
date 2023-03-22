@@ -122,6 +122,7 @@ export const Order4Styles = styled.main`
 
 
   @media (min-width:600px) {
+    height: 80%;
     width: 60%;
   }
 `;

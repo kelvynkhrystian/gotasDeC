@@ -117,6 +117,7 @@ export const Order2Styles = styled.main`
 
 
   @media (min-width:600px) {
+    height: 70%;
     width: 60%;
   }
 `;

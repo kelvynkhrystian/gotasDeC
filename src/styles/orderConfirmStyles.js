@@ -204,6 +204,6 @@ export const OrderConfirmStyles = styled.main`
   }
 
   @media (min-width:600px) {
-    width: 50%;
+    width: 45%;
   }
 `;

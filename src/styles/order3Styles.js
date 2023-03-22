@@ -117,6 +117,7 @@ export const Order3Styles = styled.main`
 
 
   @media (min-width:600px) {
-    width: 60%;
+    height: 70%;
+    width: 80%;
   }
 `;
