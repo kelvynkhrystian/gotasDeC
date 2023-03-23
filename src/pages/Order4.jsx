@@ -24,17 +24,16 @@ const additional = [
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/m&m.png?raw=true',
   },
   {
-    id: 'morango',
-    name: 'Morango',
-    price: 5,
-    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalMorango.png?raw=true',
-  },
-  
-  {
     id: 'kitkat',
     name: 'Kitkat',
-    price: 6,
+    price: 5,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalKitkat.png?raw=true',
+  },
+  {
+    id: 'morango',
+    name: 'Morango',
+    price: 6,
+    image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalMorango.png?raw=true',
   },
   {
     id: 'ferreiro',
