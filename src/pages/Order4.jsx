@@ -37,7 +37,7 @@ const additional = [
   },
   {
     id: 'ferreiro',
-    name: 'Ferreiro R.',
+    name: 'Ferrero R.',
     price: 8,
     image: 'https://github.com/kelvynkhrystian/gotasdechocolate/blob/main/src/images/adicionalFerreiro.png?raw=true',
   },
